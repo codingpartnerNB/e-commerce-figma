@@ -21,8 +21,8 @@ const Card = ({ product }) => {
             {product.title}
           </h3>
           {/* Tooltip */}
-          <div className="absolute bottom-full left-0 w-full px-2 mb-2 hidden group-hover:block z-10">
-            <div className="bg-gray-800 text-white text-sm font-normal p-2 rounded-md shadow-lg whitespace-normal break-words max-w-xs transform transition-all duration-200 origin-bottom scale-95 group-hover:scale-100">
+          <div className="absolute bottom-full left-0 w-full px-2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 delay-100 z-10 pointer-events-none">
+            <div className="bg-gray-800 text-white text-sm font-normal p-2 rounded-md shadow-lg whitespace-normal break-words max-w-xs transform transition-all duration-200 origin-bottom scale-95 group-hover:scale-100 pointer-events-auto">
               {product.title}
               {/* Tooltip arrow */}
               <div className="absolute top-full left-4 w-0 h-0 border-l-4 border-r-4 border-b-0 border-l-transparent border-r-transparent border-b-transparent border-t-4 border-t-gray-800"></div>
